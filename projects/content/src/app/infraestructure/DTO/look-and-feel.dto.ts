@@ -1,4 +1,4 @@
-export interface LookAndFeelModel {
+export interface LookAndFeelDTO {
   ProgramId: string;
   ImageBackgroundLogin: string;
   Logo: string;
