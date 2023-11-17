@@ -22,7 +22,6 @@ export const applyTheme = (theme: LookAndFeelModel): void => {
 
 
 export const mapTheme = (lookAndFeel: LookAndFeelModel): IMappedTheme => {
-  console.log(lookAndFeel);
   return {
     "--ngx-color-primary": lookAndFeel.PrimaryColor,
     "--ngx-color-secondary": lookAndFeel.SecondaryColor,
