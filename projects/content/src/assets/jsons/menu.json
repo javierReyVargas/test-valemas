@@ -1,0 +1,204 @@
+{
+  "codeId": 200,
+  "message": "Login satisfactorio",
+  "data": {
+      "userName": "ADAN",
+      "name": "ADAN",
+      "lastName": "BUSTAMANTE",
+      "fullName": "ADAN JESUS BUSTAMANTE PEREZ",
+      "personId": 2,
+      "programId": 6,
+      "languageId": 0,
+      "requiredNewPassword": false,
+      "roles": [
+          {
+              "roleId": 1,
+              "roleName": "ADAN"
+          },
+          {
+              "roleId": 2,
+              "roleName": "SUPERADMINISTRADOR"
+          }
+      ],
+      "functionalities": [
+          {
+              "id": 1,
+              "name": "Gestión del sistema",
+              "path": "/main/system",
+              "pages": [
+                  {
+                      "pageId": 1,
+                      "pageName": "Roles y funciones",
+                      "path": "/main/system/roles-and-functions",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 2,
+                      "pageName": "Formulario registro de usuarios",
+                      "path": "/main/system/user-form-config",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  }
+              ]
+          },
+          {
+              "id": 2,
+              "name": "Gestión de usuarios",
+              "path": "/main/user",
+              "pages": [
+                  {
+                      "pageId": 3,
+                      "pageName": "Crear usuario (individual)",
+                      "path": "/main/user/create-users",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 4,
+                      "pageName": "Crear usuarios (masivo)",
+                      "path": "/main/user/masive-users",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 5,
+                      "pageName": "Consultar y gestionar usuarios",
+                      "path": "/main/user/users",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  }
+              ]
+          },
+          {
+              "id": 3,
+              "name": "Gestión de programas",
+              "path": "/main/programs",
+              "pages": [
+                  {
+                      "pageId": 6,
+                      "pageName": "Información general",
+                      "path": "/main/programs/general-information",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 7,
+                      "pageName": "Secciones",
+                      "path": "/main/programs/program-sections",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  }
+              ]
+          },
+          {
+              "id": 4,
+              "name": "Gestión de Misiones",
+              "path": "",
+              "pages": [
+                  {
+                      "pageId": 8,
+                      "pageName": "Crear misión",
+                      "path": "",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 9,
+                      "pageName": "Misiones activas",
+                      "path": "",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 10,
+                      "pageName": "Misiones cerradas",
+                      "path": "",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 11,
+                      "pageName": "Calificar misiones",
+                      "path": "",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  }
+              ]
+          },
+          {
+              "id": 5,
+              "name": "Gestión de estilos y presentación",
+              "path": "",
+              "pages": [
+                  {
+                      "pageId": 12,
+                      "pageName": "Diseño del sistema",
+                      "path": "",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  },
+                  {
+                      "pageId": 13,
+                      "pageName": "Configurar pie de página",
+                      "path": "",
+                      "permissions": [
+                          "C",
+                          "R",
+                          "U",
+                          "D"
+                      ]
+                  }
+              ]
+          }
+      ]
+  }
+}
