@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectángulo_522" data-name="Rectángulo 522" width="12" height="12" transform="translate(0.305)" fill="rgba(26,12,63,0.4)" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_839" data-name="Grupo 839" transform="translate(-0.305)">
+    <rect id="Rectángulo_523" data-name="Rectángulo 523" width="24" height="24" transform="translate(0.305)" fill="none"/>
+    <g id="icon-arrow-down" transform="translate(6 6)" clip-path="url(#clip-path)">
+      <path id="expand_more_FILL0_wght400_GRAD0_opsz24" d="M262.657-617.636a1.167,1.167,0,0,1-.381-.061.9.9,0,0,1-.33-.206l-4.668-4.47a.9.9,0,0,1-.279-.68.9.9,0,0,1,.279-.68.985.985,0,0,1,.71-.267.985.985,0,0,1,.71.267l3.958,3.79,3.958-3.79a.986.986,0,0,1,.71-.267.985.985,0,0,1,.71.267.9.9,0,0,1,.279.68.9.9,0,0,1-.279.68l-4.668,4.47a.9.9,0,0,1-.33.206A1.167,1.167,0,0,1,262.657-617.636Z" transform="translate(-256.813 627.171)" fill="rgba(26,12,63,0.4)"/>
+    </g>
+  </g>
+</svg>
