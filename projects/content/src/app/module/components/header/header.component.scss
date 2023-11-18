@@ -3,6 +3,10 @@ header {
   border-bottom: solid 4px #ccc;
   & button {
     margin-left: 15px;
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      width: 60%;
+      margin-left: 50px;
+    }
   }
 
   & .sidebar-close {
@@ -13,6 +17,7 @@ header {
     border: var(--ngx-color-tertiary);
     border-radius: 20px;
     background-color: var(--ngx-color-primary);
+    transition: all 0.3s ease-in-out;
     & span::after {
       content: 'X';
       font-size: 20px;
@@ -21,6 +26,7 @@ header {
   }
 
   & .sidebar-burger {
+    transition: all 0.3s ease-in-out;
     background: transparent url('../../../../assets/icons/menu.svg') no-repeat center center;
     width: 40px;
     height: 40px;
