@@ -1,4 +1,6 @@
 <section class="main">
+  <div class="overlay" *ngIf="!isSidebarHidden"></div>
+
   <content-header [isSidebarHidden]="isSidebarHidden"
                 (toggleSidebarEvent)="toggleSidebar()">
   </content-header>
