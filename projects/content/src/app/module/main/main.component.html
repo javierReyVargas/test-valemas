@@ -1,2 +1,13 @@
-<p>main works!</p>
-<router-outlet></router-outlet>
+<section class="main">
+  <content-header [isSidebarHidden]="isSidebarHidden"
+                (toggleSidebarEvent)="toggleSidebar()">
+  </content-header>
+
+  <div class="sidebar" [ngClass]="{ 'hidden': isSidebarHidden }">
+    <content-menu></content-menu>
+  </div>
+
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</section>
