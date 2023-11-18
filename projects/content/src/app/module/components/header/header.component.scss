@@ -1,6 +1,9 @@
 header {
   height: 60px;
   border-bottom: solid 4px #ccc;
+  & button {
+    margin-left: 15px;
+  }
 
   & .sidebar-close {
     width: 40px;
