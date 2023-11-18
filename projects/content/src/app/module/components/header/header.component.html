@@ -1,0 +1,9 @@
+<header>
+  <button [ngClass]="{
+                      'sidebar-close': !isSidebarHidden,
+                      'sidebar-burger': isSidebarHidden
+                     }"
+          (click)="onToggleSidebar()">
+          <span></span>
+        </button>
+</header>

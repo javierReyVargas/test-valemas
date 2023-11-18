@@ -1,0 +1,28 @@
+header {
+  height: 60px;
+  border-bottom: solid 4px #ccc;
+
+  & .sidebar-close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    border: var(--ngx-color-tertiary);
+    border-radius: 20px;
+    background-color: var(--ngx-color-primary);
+    & span::after {
+      content: 'X';
+      font-size: 20px;
+      color: var(--ngx-color-tertiary);
+    }
+  }
+
+  & .sidebar-burger {
+    background: transparent url('../../../../assets/icons/menu.svg') no-repeat center center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    border: none;
+  }
+}
