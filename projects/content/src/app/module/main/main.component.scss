@@ -13,9 +13,20 @@
     @media only screen and (min-width: 768px) and (max-width: 1023px) {
       width: 60%;
     }
+    @media only screen and (min-width: 1024px) {
+      width: 25%;
+      top: 0;
+      box-shadow: rgba(0, 0, 0, 0.15) 3.95px 0 3.6px;
+      &.hidden {
+        margin-left: 0;
+      }
+    }
   }
   & .content {
     padding: 16px;
+    @media only screen and (min-width: 1024px) {
+      margin-left: 25%;
+    }
   }
 
 }
