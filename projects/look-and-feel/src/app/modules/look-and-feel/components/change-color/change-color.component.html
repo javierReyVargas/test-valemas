@@ -2,4 +2,7 @@
   <h3>{{title}}</h3>
   <p>{{description}}</p>
   <input type="color" (input)="onChangeColor($event)" [value]="colorPredeterminate">
+  <p class="sugestion" *ngIf="sugestion !== ''">
+    {{sugestion}}
+  </p>
 </div>

@@ -9,6 +9,7 @@ export class ChangeColorComponent {
   @Input() title: string = '';
   @Input() description: string = '';
   @Input() colorPredeterminate: string = '';
+  @Input() sugestion: string = '';
   @Output() colorChange = new EventEmitter<string>();
 
   onChangeColor(event: any) {
