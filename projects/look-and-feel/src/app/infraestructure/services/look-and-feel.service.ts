@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, map, of } from 'rxjs';
+import { Observable, catchError, map, of } from 'rxjs';
 import { LookAndFeelDTO } from '../DTO/look-and-feel.dto';
 import { ManageStorageService } from './manage-satorage.service';
 
@@ -15,7 +15,6 @@ export class LookAndFeelService {
 
   getLookAndFeel(): Observable<LookAndFeelDTO> {
     const storeDataLaf = this.manageStorageService.getItem();
-
     if (storeDataLaf) {
       return of(storeDataLaf);
     } else {
@@ -27,6 +26,18 @@ export class LookAndFeelService {
         })
       );
     }
+  }
+
+  saveLookAndFeel(lookAndFeel: LookAndFeelDTO): void {
+    this.saveOnDocument(lookAndFeel);
+    return this.manageStorageService.setItem(lookAndFeel);
+  }
+
+  private saveOnDocument(lafData: LookAndFeelDTO) {
+    document.documentElement.style.setProperty('--ngx-color-primary', lafData.PrimaryColor);
+    document.documentElement.style.setProperty('--ngx-color-secondary', lafData.SecondaryColor);
+    document.documentElement.style.setProperty('--ngx-color-tertiary', lafData.TertiaryColor);
+    document.documentElement.style.setProperty('--imagen-background-login', lafData.ImageBackgroundLogin);
   }
 
 }

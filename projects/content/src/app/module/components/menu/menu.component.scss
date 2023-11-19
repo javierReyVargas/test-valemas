@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     & li {
-      color: var(--ngx-color-secondary);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -20,15 +19,8 @@
         display: flex;
         align-items: center;
         font-size: 16px;
+        color: var(--ngx-color-secondary);
         font: normal normal bold 16px/19px Euclid Circular B;
-        & > span {
-          &.icon-profile {
-            background: transparent url('../../../../assets/icons/profile.svg') no-repeat center center;
-            width: 40px;
-            height: 40px;
-            position: absolute;
-          }
-        }
         & p {
           margin-left: 50px;
         }
@@ -62,6 +54,7 @@
     border-radius: 19px;
     border-color: var(--ngx-color-tertiary);
     padding: 0px 26px;
+    background-color: #FAFAFA;
     font: normal normal bold 16px/19px Euclid Circular B;;
     cursor: pointer;
     & span.icon-logout {

@@ -1,0 +1,27 @@
+.change-color {
+  border-bottom: solid 1px #C3C3C3;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  font: normal normal normal 14px/17px Euclid Circular B;
+  font-size: 14px;
+  & h3 {
+    margin-bottom: 0;
+  }
+  & p {
+    margin-top: 8px;
+    margin-bottom: 5px;
+  }
+  & p, h3 {
+    color: var(--ngx-color-secondary);
+  }
+  & input {
+    width: 100%;
+    height: 45px;
+    border-radius: 13px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  & .sugestion {
+    opacity: 0.5;
+    margin-top: 10px;
+  }
+}

@@ -1,1 +1,109 @@
-<p>system-design works!</p>
+<section class="container-management">
+  <h1>Diseño del sistema</h1>
+  <laf-change-color [title]="'Color primario'"
+                    [description]="'Al modificar este color cambiarás el color de fondo en el portal.'"
+                    (colorChange)="onChangeColor('1', $event)"
+                    [colorPredeterminate]="lookAF.PrimaryColor">
+  </laf-change-color>
+  <laf-change-color [title]="'Color Secundario'"
+                    [description]="'Al modificar este color cambiarás el color en los textos del portal.'"
+                    (colorChange)="onChangeColor('2', $event)"
+                    [colorPredeterminate]="lookAF.SecondaryColor">
+  </laf-change-color>
+  <laf-change-color [title]="'Color Terciario'"
+                    [description]="'Al modificar este color cambiarás el color en los botones dentro del portal.'"
+                    (colorChange)="onChangeColor('3', $event)"
+                    [colorPredeterminate]="lookAF.TertiaryColor">
+  </laf-change-color>
+
+  <p class="p-contrast">
+    <span>
+      * Recuerda lograr un buen contraste que permita una correcta lectura
+     de los elemento dentro del portal.
+     Puedes hacer uso de esta herramienta:
+    </span>
+     <a class="p-contrast-url" href="https://color.adobe.com/es/create/color-contrast-analyzer">
+      https://color.adobe.com/es/create/color-contrast-analyzer
+    </a>
+    <span>
+      para comprobar el contraste.
+    </span>
+  </p>
+
+  <div class="container-reset-colors">
+    <button class="reset-colors">
+      Restaurar colores por defecto
+    </button>
+  </div>
+
+
+  <section class="upload-img">
+    <h3>Imagen</h3>
+
+    <div class="container">
+      <div class="name-image">
+        <p>
+          Imagenpordefecto.jpg
+        </p>
+      </div>
+
+      <div class="container-button">
+        <button class="upload-image">
+          Subir archivo
+
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+            <defs>
+              <clipPath id="clip-path">
+                <rect id="Rectángulo_564" data-name="Rectángulo 564" width="16" height="16" transform="translate(-840 1286)" fill="#1a0c3f"/>
+              </clipPath>
+            </defs>
+            <g id="icon-upload" transform="translate(840 -1286)" clip-path="url(#clip-path)">
+              <path id="upload_FILL0_wght400_GRAD0_opsz24" d="M167-788v-8.15l-2.6,2.6L163-795l5-5,5,5-1.4,1.45-2.6-2.6V-788Zm-5,4a1.926,1.926,0,0,1-1.413-.588A1.926,1.926,0,0,1,160-786v-3h2v3h12v-3h2v3a1.926,1.926,0,0,1-.587,1.412A1.926,1.926,0,0,1,174-784Z" transform="translate(-1000 2086)" fill="#1a0c3f"/>
+            </g>
+          </svg>
+
+
+        </button>
+      </div>
+
+      <div class="container-sugestion">
+        <p>
+          * Sube una imagen de 800px por 800px.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <laf-change-color [title]="'Color de fondo'"
+                    [description]="'Al modificar este color cambiarás el color del fondo en la pantalla de Login y bienvenida.'"
+                    [sugestion]="'* Procura que este color sea el color de fondo o principal en la imagen que subas.'">
+  </laf-change-color>
+
+  <section class="container-type">
+    <h3>Tipografía</h3>
+    <div class="custom-select">
+      <select name="typeSelect" class="select-box">
+        <option value="" disabled selected hidden>Selecciona una opción</option>
+        <option value="Euclid Circular B">Euclid Circular B</option>
+        <option value="Lato">Lato</option>
+        <option value="Noto Sans">Noto Sans</option>
+        <option value="PT Sans">PT Sans</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Open Sans">Open Sans</option>
+        <option value="Montserrat">Montserrat</option>
+        <option value="Inter">Inter</option>
+        <option value="Cabin">Cabin</option>
+      </select>
+    </div>
+  </section>
+
+  <section class="actions">
+    <button class="save-changes" (click)="onSaveChanges()">
+      Guardar cambios
+    </button>
+    <button class="discard-changes">
+      Descartar cambios
+    </button>
+  </section>
+
+</section>
