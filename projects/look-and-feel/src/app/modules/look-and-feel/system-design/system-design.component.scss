@@ -1,0 +1,114 @@
+
+%generalButton {
+  border: solid 2px var(--ngx-color-tertiary);
+  border-radius: 22px;
+  width: 260px;
+  height: 44px;
+  text-align: center;
+  background-color: #FAFAFA;
+  font: normal normal bold 16px/19px Euclid Circular B;
+}
+%alignCenter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.container-management {
+  & h1 {
+    font-size: 30px;
+  }
+  & h1, h3, p, a {
+    color: var(--ngx-color-secondary);
+  }
+  & .reset-colors,
+    .save-changes,
+    .discard-changes,
+    .upload-image {
+    @extend %generalButton;
+  }
+  & .upload-image {
+    & svg {
+      margin-left: 10px;
+    }
+  }
+  & .p-contrast {
+    & span {
+      opacity: 0.5;
+    }
+  }
+  & .container-reset-colors {
+    @extend %alignCenter;
+  }
+  & .upload-img {
+    border-bottom: solid 1px #C3C3C3;
+    & .container {
+      @extend %alignCenter;
+      & .name-image {
+        & P {
+          margin-bottom: 4px;
+        }
+      }
+      & .container-sugestion {
+        & p {
+          opacity: 0.5;
+          margin-top: 8px;
+        }
+      }
+
+      @media only screen and (min-width: 768px) and (max-width: 1023px) {
+        & .name-image, .container-sugestion, .container-button {
+          width: 100%;
+        }
+        & .container-button {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+      @media only screen and (min-width: 1024px) {
+        & .name-image, .container-sugestion, .container-button {
+          width: 100%;
+        }
+        & .container-button {
+          display: flex;
+          justify-content: flex-end;
+        }
+      }
+    }
+  }
+
+  & .container-type {
+    & .custom-select {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      & .select-box {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    }
+  }
+  & .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+    height: 100px;
+    & .save-changes {
+      background-color: var(--ngx-color-tertiary);
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 1023px) {
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+  }
+
+  @media only screen and (min-width: 1024px) {
+    padding: 0px 150px;
+  }
+}
